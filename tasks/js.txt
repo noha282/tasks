@@ -1,0 +1,71 @@
+ calculate the power of any number 
+
+
+function power(num) {
+    var result = num * num;
+    return result;
+}
+
+
+var result = power(6);
+console.log(result);
+
+
+============================
+check is number is prime or not 
+
+
+let num = parseFloat(prompt("enter number"));
+for (var i = 2; i < num; i++)
+    if (num % i === 0) {
+        console.log(" the number is prime ");
+    } else {
+        console.log(" the number is not prime ");
+    }
+=============================================
+check if string is palindrome 
+
+let str = prompt("enter word");
+newstr = str.reverse();
+if (sstr === newstr) {
+    console.log(" the string is palindrome  ");
+} else {
+    console.log(" the string is not ");
+}
+=======================================
+reverse string 
+
+function reversestr(str) {
+    return str.split('').reverse().join('');
+}
+let strname = prompt("enter word");
+console.log(reversestr(strname));
+
+================================
+console.log(sum(5)(5)(5)(5)) //25 
+
+let number = 5
+function sum (a){
+    return function (b){
+        return function (c){
+            return function (d){
+                return a + b + c + d+ number ;
+            }
+        }
+    }
+}
+ console.log ( sum (5)(5)(5)(5));
+ 
+ =================================
+  the Fibonacci numbers for a n numbers 
+
+   function fib(num) {
+     if (num <= 1) {
+         return [0, 1];
+     }
+     return fib(num - 1) + fib(num - 2);;
+ }
+ console.log(fib(10));
+
+ ===============================
+
